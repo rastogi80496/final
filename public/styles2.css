@@ -1,0 +1,46 @@
+body {
+    background-color: hsla(210, 4%, 9%, 1);
+}
+
+.table {
+    margin-top: 20px;
+}
+
+h1 {
+    color: hsl(38, 61%, 73%);
+    font-weight: bold;
+}
+
+tbody {
+    background:white;
+    color:hsl(38, 61%, 73%);
+    font-size:large;
+}
+
+ 
+.shape {
+    display: block;
+    width: 70%;
+    position: absolute;
+    z-index: -1;
+    max-width: max-content;
+}
+  
+.shape-2 {
+    top: 0;
+    left: 0;
+}
+  
+.shape-3 {
+    bottom: 0;
+    right: 0;
+}
+
+.move-anim { animation: move 5s linear infinite; }
+
+@keyframes move {
+    0%,
+    100% { transform: translateY(0); }
+  
+    50% { transform: translateY(30px); }
+}
